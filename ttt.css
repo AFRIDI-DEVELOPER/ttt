@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    font-family: futura;
+    transition: 0.2s ease;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+
+body {
+    margin-top: 15%;
+    text-align: center;
+    background-color: rgb(4, 59, 58);
+    width: 100vw;
+}
+
+
+h1 {
+    margin-top: 20px;
+    font-size: 40px;
+    color: transparent;
+    background-image: url("file:///Users/sahidafridi/javascript.projects/color.jpeg");
+    font-family:futura;
+    -webkit-background-clip:text;
+    color: transparent;
+    background-size: cover;
+    margin-bottom: 5%;
+}
+
+.head {
+    margin-top: 10%;
+    color: rgb(221, 255, 0);
+    font-weight: 800;
+}
+
+.show {
+    margin-top: 10%;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 2px solid black;
+    font-size: 20px;
+    margin-right: -3px;
+    margin-left: -3px;
+}
+
+.show:hover {
+    background-color: rgb(49, 11, 11);
+    color: rgb(113, 82, 9);
+}
+
+.container {
+    margin-top: 5%;
+    padding: 20px 10px 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60vmin;
+    height: 60vmin;
+    justify-content: center;
+    background-color: rgba(118, 177, 163, 0.388);
+    gap: 2vmin;
+    animation-name: slidein;
+    animation-duration: 0.5s;
+    animation-iteration-count: 10000;
+    transition: 2s ease-in-out;
+    margin-bottom: 20%;
+}
+@keyframes slidein {
+    0%{
+        translate: 0.1vw 1%;
+        scale: 99%;
+        background-color: rgba(4, 163, 163, 0.468);
+    }
+    15%{
+        /* background-color: rgba(9, 120, 83, 0.509); */
+    }
+    30%{
+        /* background-color: rgba(9, 138, 63, 0.43); */
+    }
+    40%{
+        /* background-color:rgba(14, 171, 153, 0.64) ; */
+    }
+    50%{
+        /* background-color:rgb(11, 103, 63); */
+    }
+    70%{
+        /* background-color: rgba(37, 109, 181, 0.594); */
+    }
+
+
+    100% {
+        translate: 0 0;
+        scale: 100%;
+        background-color: rgba(80, 91, 16, 0.322);
+    }}
+
+.box {
+    border-radius: 2px 2px 2px 2px;
+    justify-content: center;
+    font-size: 11vmin;
+    color: rgb(251, 255, 0);
+    background-color: rgb(73, 15, 5);
+    gap: 1.5px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 18vmin;
+    height: 18vmin;
+    transition: 0.1s ease;
+    box-shadow: 0px 0px 10px black;
+    font-family: arial black;
+    border: none;
+}
+
+.box:hover {
+    background-color: rgb(65, 13, 4);
+    box-shadow: 0px 0px 0px black;
+    text-shadow: 0px 0px 20px rgb(255, 238, 0);
+}
+
+.game {
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.play-again {
+    color: rgb(240, 222, 25);
+    background-color: chocolate;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5%;
+    width: 15vh;
+    margin-top: 10%;
+    text-align: center;
+    text-decoration:underline;
+}
+
+.play-again:hover {
+    background-color: aqua;
+    padding: 5px 10px 5px 10px;
+    border-radius: 2px 2px 2px 2px;
+    text-decoration: none;
+}
+#results{
+    background-color: rgb(10, 255, 173);
+    color: aliceblue;
+    display: none;
+
+}
